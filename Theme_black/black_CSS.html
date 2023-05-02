@@ -5,19 +5,22 @@
         <title>Seunghyun's Page</title>
         <!-- <link rel="stylesheet" href="black_style.css"> -->
         <style>
+            /* 페이지 초기화 */
             * {
                 margin: 0; padding: 0;
-            }
-            body {
-                background-color: black;
-                margin: 0 auto;
             }
             a {
                 text-decoration: none;
                 color: #c6c6c6;
             }
+            li { list-style: none; }
+            /* 몸체 */
+            body {
+                background-color: black;
+                margin: 0 auto;
+            }
             .head_white {
-                color: #f9f9f9;
+                color: #fefefe;
             }
             #header {
                 position: fixed;
@@ -62,24 +65,74 @@
                 height: 20px; padding: 0 15px;
                 line-height: 20px;
             }
+            /* 홈페이지 아이콘 */
+            .homepage_icon {
+                background-color: #272727;
+                border-radius: 5px;
+                height: 40px; margin: 5px; padding: 0 5px;
+                line-height: 40px;
+                float: left;
+                font-size: 25px;
+                opacity: 1.0;
+            }
+            .homepage_icon:hover {
+                background-color: #595959;
+            }
+            a:hover {
+                color: white;
+            }
+            .division_line {
+                float: left;
+                font-size: 25px;
+                color: #fefefe;
+            }
+            /* 테마 체인저 */
+            .theme_changer {
+                overflow: hidden;
+                float: right;
+                height: 40px; margin: 5px; padding: 0 5px;
+                line-height: 40px;
+                border-radius: 5px;
+            }
+            .theme_changer:hover {
+                background-color: #595959;
+            }
+            .theme_blacktowhite {
+                color: #fefefe;
+                float: right;
+                font-size: 20px
+            }
+            .theme_blacktowhite img {
+                margin: 8.5px 5px 0 0;
+            }
         </style>
     </head>
     <body>
         <div id="page-wrapper">
             <div id="header">
-                <a href="../black_frame/black_main-frame.html" target="_top"><font size="5" color="fefefe">
-                    Seunghyun's Page&nbsp;|&nbsp;</font></a>
-                <input id="theme" type="image" src="../../src/black-white_circle.png" alt="Theme" width="20" formtarget="_top">
-                <label for="theme"><font size="3" color="fefefe">Theme</font></label>
+                <div class="homepage_icon">
+                    <a class="head_white" href="#" target="_self">Seunghyun's Page</a>
+                </div>
+                <div class="division_line">
+                    <p>&nbsp|&nbsp</p>
+                </div>
+                <div class="theme_changer">
+                    <div class="theme_blacktowhite">
+                        Theme
+                    </div>
+                    <div class="theme_blacktowhite">
+                        <a href="#" target="_self"><img src="../src/black-white_circle.png" alt="Theme" width="20"></a>
+                    </div>
+                </div>
             </div>
             <div id="content">
                 <div id="left-navigation">
-                    <h2 class="head_white"><a href="black_frame/black_main-frame.html" target="_top">Main Page</a></h2><hr>
-                    <h4>&nbsp;- <a href="black_frame/black_introduction-frame.html" target="_top">자기 소개서</a></h4>
-                    <h4>&nbsp;- <a href="black_frame/black_aboutweb-frame.html" target="_top">About Web</a></h4>
-                    <h4>&nbsp;- <a href="black_frame/black_frontend-frame.html" target="_top">Front-end</a></h4>
-                    <h4>&nbsp;- <a href="black_frame/black_backend-frame.html" target="_top">Back-end</a></h4>
-                    <h4>&nbsp;- <a href="black_frame/black_framework-frame.html" target="_top">Web Framework</a></h4>
+                    <h2 class="head_white"><a href="#" target="_top">Main Page</a></h2><hr>
+                    <h4>&nbsp;- <a href="#" target="_top">자기 소개서</a></h4>
+                    <h4>&nbsp;- <a href="#" target="_top">About Web</a></h4>
+                    <h4>&nbsp;- <a href="#" target="_top">Front-end</a></h4>
+                    <h4>&nbsp;- <a href="#" target="_top">Back-end</a></h4>
+                    <h4>&nbsp;- <a href="#" target="_top">Web Framework</a></h4>
                 </div>
                 <div id="section">
                     <h1 class="head_white"><a name="Welcome">Welcome to Seunghyun's Page!</a></h1><hr><br><br><br>
@@ -120,13 +173,13 @@
                     </ul></div>
                 <div id="right-navigation">
                     <h3 class="head_white">In this article</h3><hr>
-                    <h4>&nbsp;&nbsp;&nbsp;<a href="../black_doc/black_frontend.html#H Front-end" target="mainpage">Front-end</a></h4>
-                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <a href="../black_doc/black_frontend.html#Front-end, Back-end" target="mainpage">Front-end, Back-end?</a></h5>
-                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <a href="../black_doc/black_frontend.html#What is Front-end" target="mainpage">What is Front-end?</a></h5>
-                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <a href="../black_doc/black_frontend.html#Programming Languages" target="mainpage">Programming Languages</a></h5>
-                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a href="../black_doc/black_frontend.html#HTML" target="mainpage">HTML</a></h5>
-                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a href="../black_doc/black_frontend.html#CSS" target="mainpage">CSS</a></h5>
-                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a href="../black_doc/black_frontend.html#JavaScript" target="mainpage">JavaScript</a></h5>
+                    <h4>&nbsp;&nbsp;&nbsp;<a href="#" target="mainpage">Front-end</a></h4>
+                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <a href="#" target="mainpage">Front-end, Back-end?</a></h5>
+                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <a href="#" target="mainpage">What is Front-end?</a></h5>
+                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <a href="#" target="mainpage">Programming Languages</a></h5>
+                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a href="#" target="mainpage">HTML</a></h5>
+                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a href="#" target="mainpage">CSS</a></h5>
+                    <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <a href="#" target="mainpage">JavaScript</a></h5>
                 </div>
             </div>
             <div id="footer">
