@@ -1,4 +1,4 @@
-# TermProject #1
+# TermProject #2
 ## About this Webpage
 본 웹 페이지는 '웹 프로그래밍' 강의의 'Termproject #1' 과제 제출 목적으로, CSS나 JavaScript를 사용하지 않고, 
 순수 HTML로 만들어졌습니다.
